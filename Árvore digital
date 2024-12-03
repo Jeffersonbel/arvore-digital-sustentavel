@@ -4,7 +4,12 @@
 │   └── styles.css   -> Estilos do site
 ├── js/
 │   └── script.js    -> Scripts de interatividade
-├── assets/          -> Imagens ou outros arquivos estáticos
+├── assets/
+│   ├── images/      -> Imagens do site
+│   │   ├── banner.jpg
+│   │   ├── parceiro1.webp
+│   │   ├── parceiro2.webp
+│   │   └── parceiro3.webp
 ├── README.md        -> Documentação do projeto
 └── .gitignore       -> Arquivo para ignorar configurações locais
 <!DOCTYPE html>
@@ -14,6 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Plataforma digital para o plantio e monitoramento sustentável de árvores.">
     <title>Árvore Digital Sustentável</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -56,14 +62,16 @@
     <script src="js/script.js"></script>
 </body>
 </html>
+/* Estilo global */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f8f5;
     color: #333;
 }
 
+/* Cabeçalho */
 header {
     background-color: #228b22;
     color: white;
@@ -71,6 +79,7 @@ header {
     text-align: center;
 }
 
+/* Navegação */
 nav {
     display: flex;
     justify-content: center;
@@ -89,18 +98,24 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Conteúdo Principal */
 main {
     padding: 20px;
 }
 
 section {
     margin-bottom: 30px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
     color: #228b22;
 }
 
+/* Rodapé */
 footer {
     background-color: #2e8b57;
     color: white;
@@ -108,28 +123,32 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
-// Futuramente, scripts interativos serão adicionados aqui.
-// Exemplo: validação de formulário, interatividade do menu, etc.
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    header {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
+// script.js
 
 console.log("Bem-vindo à Árvore Digital Sustentável!");
-# Árvore Digital Sustentável
 
-Plataforma digital para conectar usuários ao plantio e monitoramento de árvores, promovendo sustentabilidade e impacto ambiental positivo.
-
-## Funcionalidades
-- Compra de árvores e serviços de manutenção.
-- Monitoramento por satélite.
-- Economia digital sustentável com tokens digitais.
-
-## Tecnologias Utilizadas
-- HTML, CSS e JavaScript para a interface do usuário.
-- Planejamento para integração com APIs e back-end.
-
-## Como Contribuir
-- Faça um fork do repositório.
-- Envie um pull request com melhorias ou novos recursos.
-# Ignorar arquivos de configuração locais
-node_modules/
-.DS_Store
-*.log
-.env
+// Função exemplo para validação futura de formulário
+function validarFormulario() {
+    console.log("Formulário validado!");
+}
