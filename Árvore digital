@@ -1,296 +1,135 @@
+/arvore-digital-sustentavel
+├── index.html       -> Página principal
+├── css/
+│   └── styles.css   -> Estilos do site
+├── js/
+│   └── script.js    -> Scripts de interatividade
+├── assets/          -> Imagens ou outros arquivos estáticos
+├── README.md        -> Documentação do projeto
+└── .gitignore       -> Arquivo para ignorar configurações locais
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plataforma digital para o plantio e monitoramento sustentável de árvores.">
     <title>Árvore Digital Sustentável</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#map">Mapa</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
+        <h1>Árvore Digital Sustentável</h1>
+        <p>Conectando tecnologia, meio ambiente e economia digital</p>
     </header>
-
-    <section id="home">
-        <div class="banner">
-            <h1>Árvore Digital Sustentável</h1>
-            <p>Conectando tecnologia e meio ambiente para um futuro sustentável.</p>
-            <a href="#services" class="cta">Começar Agora</a>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2>Sobre Nós</h2>
-        <p>Promovemos o reflorestamento com transparência, gamificação e tecnologia. Cada árvore plantada faz parte de um grande impacto ambiental.</p>
-    </section>
-
-    <section id="services">
-        <h2>Nossos Serviços</h2>
-        <ul>
-            <li>Compra de árvores virtuais</li>
-            <li>Gamificação ambiental</li>
-            <li>Monitoramento por satélite</li>
-            <li>Marketplace de créditos digitais (CarbonoVerde)</li>
-        </ul>
-    </section>
-
-    <section id="map">
-        <h2>Mapa de Plantio</h2>
-        <p>Veja em tempo real onde suas árvores estão sendo plantadas:</p>
-        <iframe src="https://www.google.com/maps/embed" width="100%" height="300" style="border:0;" allowfullscreen></iframe>
-    </section>
-
-    <section id="gamification">
-        <h2>Gamificação</h2>
-        <p>Participe de desafios e suba no ranking:</p>
-        <ol>
-            <li>João Silva - 50 árvores plantadas</li>
-            <li>Maria Oliveira - 30 árvores plantadas</li>
-            <li>Carlos Santos - 25 árvores plantadas</li>
-        </ol>
-    </section>
-
-    <section id="partners">
-        <h2>Parceiros</h2>
-        <p>Apoiadores desta iniciativa:</p>
-        <div class="partners-logos">
-            <img src="parceiro1.png" alt="Parceiro 1">
-            <img src="parceiro2.png" alt="Parceiro 2">
-            <img src="parceiro3.png" alt="Parceiro 3">
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contato</h2>
-        <form>
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#como-funciona">Como Funciona</a>
+        <a href="#impacto">Impacto</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <main>
+        <section id="sobre">
+            <h2>Sobre o Projeto</h2>
+            <p>A Árvore Digital Sustentável é uma plataforma que permite aos usuários plantar e monitorar árvores no mundo real por meio de uma interface digital. Nosso objetivo é contribuir para o reflorestamento global de forma transparente e inovadora.</p>
+        </section>
+        <section id="como-funciona">
+            <h2>Como Funciona</h2>
+            <ul>
+                <li>Usuários compram árvores ou serviços de manutenção via plataforma.</li>
+                <li>As árvores são plantadas em áreas degradadas e monitoradas por satélite.</li>
+                <li>Tokens digitais representam cada árvore plantada, podendo ser negociados ou transferidos.</li>
+            </ul>
+        </section>
+        <section id="impacto">
+            <h2>Impacto do Projeto</h2>
+            <p>Combinamos sustentabilidade ambiental, geração de empregos locais e inovação tecnológica para alcançar metas climáticas globais. Nosso foco está no reflorestamento com rastreabilidade e certificações de impacto real.</p>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para saber mais ou apoiar nosso projeto:</p>
+            <p>Email: <a href="mailto:contato@arvoredigital.com">contato@arvoredigital.com</a></p>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2024 Árvore Digital Sustentável. Todos os direitos reservados.</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
-/* Estilo base */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    background-color: #f0f8f5;
     color: #333;
-    background-color: #f4f4f4;
 }
 
-/* Cabeçalho */
 header {
-    background: #4CAF50;
+    background-color: #228b22;
     color: white;
-    padding: 10px 20px;
-}
-
-header nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Banner */
-.banner {
-    background: url('banner.jpg') no-repeat center center/cover;
-    text-align: center;
-    color: white;
-    padding: 100px 20px;
-}
-
-.cta {
-    background: #fff;
-    color: #4CAF50;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-/* Seções */
-section {
     padding: 20px;
-    margin: 20px 0;
-    background: white;
-    border-radius: 5px;
-}
-
-/* Footer */
-footer {
     text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2e8b57;
     padding: 10px;
-    background: #333;
+}
+
+nav a {
     color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Map */
-iframe {
-    border: 0;
+nav a:hover {
+    text-decoration: underline;
 }
 
-/* Parceiros */
-.partners-logos img {
-    max-width: 150px;
-    margin: 10px;
+main {
+    padding: 20px;
 }
-<section id="impact">
-    <h2>Nosso Impacto</h2>
-    <canvas id="impactChart" width="400" height="200"></canvas>
-</section>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    const ctx = document.getElementById('impactChart').getContext('2d');
-    const impactChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
-            datasets: [{
-                label: 'Árvores Plantadas',
-                data: [120, 150, 180, 200, 250, 300],
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgba(75, 192, 192, 1)',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        }
-    });
-</script>
-<section id="login">
-    <h2>Acesse sua Conta</h2>
-    <form action="/login" method="POST">
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="password">Senha:</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit">Entrar</button>
-    </form>
-</section>
-<section id="login">
-    <h2>Acesse sua Conta</h2>
-    <form action="login.php" method="POST">
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="password">Senha:</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit">Entrar</button>
-    </form>
-</section>
 
-<section id="register">
-    <h2>Cadastre-se</h2>
-    <form action="register.php" method="POST">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="password">Senha:</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit">Cadastrar</button>
-    </form>
-</section>
-<?php
-session_start();
-$users = json_decode(file_get_contents('users.json'), true);
-$email = $_POST['email'];
-$password = $_POST['password'];
-
-if (isset($users[$email]) && $users[$email]['password'] === $password) {
-    $_SESSION['user'] = $users[$email];
-    header('Location: dashboard.php');
-} else {
-    echo "Login ou senha inválidos.";
+section {
+    margin-bottom: 30px;
 }
-?>
-<?php
-$users = json_decode(file_get_contents('users.json'), true);
-$email = $_POST['email'];
 
-if (!isset($users[$email])) {
-    $users[$email] = [
-        'name' => $_POST['name'],
-        'password' => $_POST['password']
-    ];
-    file_put_contents('users.json', json_encode($users));
-    echo "Cadastro realizado com sucesso!";
-} else {
-    echo "E-mail já cadastrado.";
+section h2 {
+    color: #228b22;
 }
-?>
-<section id="impact">
-    <h2>Nosso Impacto</h2>
-    <canvas id="impactChart" width="400" height="200"></canvas>
-</section>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    const ctx = document.getElementById('impactChart').getContext('2d');
-    const impactChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
-            datasets: [{
-                label: 'Árvores Plantadas',
-                data: [120, 150, 180, 200, 250, 300],
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgba(75, 192, 192, 1)',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            responsive: true,
-            plugins: {
-                legend: { position: 'top' },
-                tooltip: { enabled: true }
-            }
-        }
-    });
-</script>
-<section id="map">
-    <h2>Mapa de Plantio</h2>
-    <p>Monitoramento em tempo real:</p>
-    <div id="map" style="height: 400px;"></div>
+footer {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+// Futuramente, scripts interativos serão adicionados aqui.
+// Exemplo: validação de formulário, interatividade do menu, etc.
 
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet" />
-    <script>
-        mapboxgl.accessToken = 'SEU_TOKEN_MAPBOX';
-        const map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11',
-            center: [-51.9253, -14.2350], // Brasil
-            zoom: 4
-        });
-    </script>
-</section>
+console.log("Bem-vindo à Árvore Digital Sustentável!");
+# Árvore Digital Sustentável
+
+Plataforma digital para conectar usuários ao plantio e monitoramento de árvores, promovendo sustentabilidade e impacto ambiental positivo.
+
+## Funcionalidades
+- Compra de árvores e serviços de manutenção.
+- Monitoramento por satélite.
+- Economia digital sustentável com tokens digitais.
+
+## Tecnologias Utilizadas
+- HTML, CSS e JavaScript para a interface do usuário.
+- Planejamento para integração com APIs e back-end.
+
+## Como Contribuir
+- Faça um fork do repositório.
+- Envie um pull request com melhorias ou novos recursos.
+# Ignorar arquivos de configuração locais
+node_modules/
+.DS_Store
+*.log
+.env
