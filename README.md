@@ -11,6 +11,4 @@ Plataforma digital para conectar usuários ao plantio e monitoramento de árvore
 - HTML, CSS e JavaScript para a interface do usuário.
 - Planejamento para integração com APIs e back-end.
 
-## Como Contribuir
-- Faça um fork do repositório.
-- Envie um pull request com melhorias ou novos recursos.
+## Estrutura do Projeto
